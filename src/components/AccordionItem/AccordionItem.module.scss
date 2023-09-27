@@ -1,0 +1,33 @@
+.c-item {
+  background: linear-gradient(-45deg,#8b39a0,#00a89d);
+  color: #fff;
+  padding: 30px;
+  border-radius: 25px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 20px;
+  row-gap: 30px;
+  align-items: center;
+  cursor: pointer;
+
+  .number {
+    color: #fae6ff;
+  }
+  
+  .number,
+  .question,
+  .icon {
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .answer {
+    grid-column: 2 / -1;
+    padding-bottom: 14px;
+    line-height: 1.5;
+  }
+
+  &.open {
+    border-top: 4px solid #ffffff;
+  }
+}
